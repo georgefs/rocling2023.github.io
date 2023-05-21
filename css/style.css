@@ -970,6 +970,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 # task Section
 --------------------------------------------------------------*/
 
+#task .section-header a {
+  color: #8a73bf;
+}
+
 #task .card-header {
   font-weight: bold;
   font-size: 24px;
