@@ -1105,15 +1105,80 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Special Session Section
 --------------------------------------------------------------*/
 
-#speical {
+#special .section-header a {
+  color: #8a73bf;
 }
 
+#special .card-header {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#special .card-header h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 18px;
+}
+
+#special .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#special h4 {
+  margin-bottom: 5px;
+}
+
+#special h5 {
+  margin-bottom: 5px;
+}
+
+#special .speakers-img {
+  width: 200px;
+}
+
+#special .speakers-img img {
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Tutorial Section
 --------------------------------------------------------------*/
 
-#tutorial {
+#tutorial .section-header a {
+  color: #8a73bf;
+}
+
+#tutorial .card-header {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#tutorial .card-header h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 18px;
+}
+
+#tutorial .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#tutorial h4 {
+  margin-bottom: 5px;
+}
+
+#tutorial h5 {
+  margin-bottom: 5px;
+}
+
+#tutorial .speakers-img {
+  width: 200px;
+}
+
+#tutorial .speakers-img img {
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1316,7 +1381,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #organization p {
-  margin: 0 0 0 0;
+  margin: 0 0 0 20px;
 }
 
 #organization .image {
@@ -1364,6 +1429,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #organization .coorganizedBy_image img {
   height: 100%;
+}
+
+#organization .organized {
+  margin-bottom: 20px;
+}
+#organization .scuds img {
+  background-color: #252b34;
 }
 
 /*--------------------------------------------------------------
@@ -1448,6 +1520,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   content: "\f055" !important;
 }
 
+#faq #faq-list .faq-content {
+  margin-bottom: 20px;
+}
+
+#faq #faq-list .faq-content a {
+  display: inline;
+  padding: 0px;
+  color: #8a73bf;
+}
+
+#faq #faq-list .faq-content li {
+  border: 0px;
+}
 
 /*--------------------------------------------------------------
 # Buy registrations Section
