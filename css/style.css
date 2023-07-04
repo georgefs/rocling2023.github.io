@@ -793,6 +793,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
+#speakers h4 {
+  margin-bottom: 10px;
+}
+
+#speakers .speaker-name {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 #speakers .speaker .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
