@@ -538,7 +538,7 @@
             <h3 class="card-title">Abstract</h3>
             <div class="row">
               <div class="col">
-                <p>
+                <p class="content">
                   在過去的幾個月裡，大型語言模型如ChatGPT的能力已經引起了大眾的廣泛討論和驚嘆，這些語言模型具有通用的處理能力，僅需給予正確的指令，往往就可以完成任務。然而，我們與語音版的ChatGPT的距離還有多遠？我們還缺少什麼才能實現語音版的ChatGPT的誕生？在這場演講中，我將分享一系列可能引領我們走向語音版ChatGPT的最新研究成果，並探討目前的挑戰、潛在的解決方案，讓我們一起攜手迎接由語音版ChatGPT帶來的未來新紀元。
                 </p>
               </div>
@@ -643,24 +643,23 @@
             <h3 class="card-title">I. Background</h3>
             <div class="row">
               <div class="col">
-                <p>Named Entity Recognition (NER) is a fundamental task in information extraction that locates the mentions of named entities and classifies them (e.g., person, organization and location) in unstructured texts. The NER task has traditionally been solved as a sequence labeling problem, where entity boundaries and category labels are jointly predicted. Chinese NER is more difficult to process than English NER. Chinese language is logographic and provides no conventional features like capitalization. In addition, due to a lack of delimiters between characters, Chinese NER is correlated with word segmentation, and named entity boundaries are also word boundaries. However, incorrectly segmented entity boundaries will cause error propagation in NER. For example, in a particular context, a disease entity “思覺失調症” (schizophrenia) may be incorrectly segmented into three words: “思覺” (thinking and feeling), “失調” (disorder) and “症” (disease).</p>
-                <p>In the digital era, healthcare information-seeking users usually search and browse web content in click-through trails to obtain healthcare-related information before making a doctor’s appointment for diagnosis and treatment. Web texts are valuable sources to provide healthcare information such as health-related news, digital health magazines and medical question/answer forums. Domain-specific healthcare information includes many proper names, mainly as named entities, such as “葡萄糖六磷酸鹽去氫酶” (Glucose-6-Phosphate Dehydrogenase; G6PD), “電腦斷層掃描” (computed tomography; CT), and “靜脈免疫球蛋白注射” (intravenous immunoglobulin; IVIG). In summary, Chinese healthcare NER is an important and essential task in natural language processing to automatically identify healthcare entities such as symptoms, chemicals, diseases, and treatments for machine reading and understanding.</p>
-                <p>Following the ROCLING-2022 shared task focused on Chinese healthcare NER, we organize a MultiNER-Health shared task for multi-genre NER in the healthcare domain. In this shared task, we have three genres:
+                <p class="content">Named Entity Recognition (NER) is a fundamental task in information extraction that locates the mentions of named entities and classifies them (e.g., person, organization and location) in unstructured texts. The NER task has traditionally been solved as a sequence labeling problem, where entity boundaries and category labels are jointly predicted. Chinese NER is more difficult to process than English NER. Chinese language is logographic and provides no conventional features like capitalization. In addition, due to a lack of delimiters between characters, Chinese NER is correlated with word segmentation, and named entity boundaries are also word boundaries. However, incorrectly segmented entity boundaries will cause error propagation in NER. For example, in a particular context, a disease entity “思覺失調症” (schizophrenia) may be incorrectly segmented into three words: “思覺” (thinking and feeling), “失調” (disorder) and “症” (disease).</p>
+                <p class="content">In the digital era, healthcare information-seeking users usually search and browse web content in click-through trails to obtain healthcare-related information before making a doctor’s appointment for diagnosis and treatment. Web texts are valuable sources to provide healthcare information such as health-related news, digital health magazines and medical question/answer forums. Domain-specific healthcare information includes many proper names, mainly as named entities, such as “葡萄糖六磷酸鹽去氫酶” (Glucose-6-Phosphate Dehydrogenase; G6PD), “電腦斷層掃描” (computed tomography; CT), and “靜脈免疫球蛋白注射” (intravenous immunoglobulin; IVIG). In summary, Chinese healthcare NER is an important and essential task in natural language processing to automatically identify healthcare entities such as symptoms, chemicals, diseases, and treatments for machine reading and understanding.</p>
+                <p class="content">Following the ROCLING-2022 shared task focused on Chinese healthcare NER, we organize a MultiNER-Health shared task for multi-genre NER in the healthcare domain. In this shared task, we have three genres:
                   <ol>
                     <li>Formal texts (FT): this includes health news and articles written by professional editors or journalists.</li>
                     <li>Social media (SM): this contains texts from crowed users in medical question/answer forums.</li>
                     <li>Wikipedia articles (WA): this free online encyclopedia includes articles created and edited by volunteers worldwide</li>
                   </ol>                  
                 </p>
-
-                <p>Named entities may be used in different word forms in other genres. For example, “後天免疫缺乏症候群” (Acquired Immunodeficiency Syndrome; AIDS) is commonly used as a spoken language form “愛滋病” in the medical forums. On the other hand, “甘油三酯” is a different usage referred to as “三酸甘油酯” (triglyceride; TG) in Wikipedia.</p>
+                <p class="content">Named entities may be used in different word forms in other genres. For example, “後天免疫缺乏症候群” (Acquired Immunodeficiency Syndrome; AIDS) is commonly used as a spoken language form “愛滋病” in the medical forums. On the other hand, “甘油三酯” is a different usage referred to as “三酸甘油酯” (triglyceride; TG) in Wikipedia.</p>
               </div>
             </div>
 
             <h3 class="card-title">II. Task Description</h3>
             <div class="row">
               <div class="col">
-                <p>A total of 10 entity types are described and some examples are provided in Table I for Chinese healthcare NER. In this task, participants are asked to predict the named entity boundaries and categories for each given sentence. We use the common BIO (Beginning, Inside, and Outside) format for NER tasks. The B-prefix before a tag indicates that the character is the beginning of a named entity and I-prefix before a tag indicates that the character is inside a named entity. An O tag indicates that a token belongs to no named entity. Below are the example sentences.</p>
+                <p class="content">A total of 10 entity types are described and some examples are provided in Table I for Chinese healthcare NER. In this task, participants are asked to predict the named entity boundaries and categories for each given sentence. We use the common BIO (Beginning, Inside, and Outside) format for NER tasks. The B-prefix before a tag indicates that the character is the beginning of a named entity and I-prefix before a tag indicates that the character is inside a named entity. An O tag indicates that a token belongs to no named entity. Below are the example sentences.</p>
                 <p class="table-title">Table 1. Named Entity Types</p>
                 <table class="table table-responsive-lg">
                   <tbody>
@@ -764,10 +763,11 @@
             <h3 class="card-title">III. Data</h3>
             <div class="row">
               <div class="col">
-                <h4>Training Set</h4>
-                <p>1. <a href="https://github.com/NCUEE-NLPLab/Chinese-HealthNER-Corpus" target="_blank">Chinese HealthNER Corpus</a><br>
-                  2. <a href="https://github.com/NCUEE-NLPLab/ROCLING-2022-ST-CHNER" target="_blank">ROCLING-2022 CHNER Dataset</a>
-                </p>
+                <b>Training Set</b>
+                <ol>
+                  <li><a href="https://github.com/NCUEE-NLPLab/Chinese-HealthNER-Corpus" target="_blank">Chinese HealthNER Corpus</a></li>
+                  <li><a href="https://github.com/NCUEE-NLPLab/ROCLING-2022-ST-CHNER" target="_blank">ROCLING-2022 CHNER Dataset</a></li>
+                </ol>
                 <table class="table table-responsive-lg text-center">
                   <tbody>
                     <tr>
@@ -805,17 +805,17 @@
                     </tr>
                   </tbody>
                 </table>
-                <p>Notes: The policy of this shared task is an open test. Participating systems are allowed to use other publicly available data for this shared task, but the use of other data should be specified in the final system description paper.</p>
+                <p class="content">Notes: The policy of this shared task is an open test. Participating systems are allowed to use other publicly available data for this shared task, but the use of other data should be specified in the final system description paper.</p>
 
-                <h4>Testing Set</h4>
-                <p>Testing Set at least 2,000 Chinese sentences per genre will be provided for system performance evaluation.</p>
+                <b>Testing Set</b>
+                <p class="content">Testing Set at least 2,000 Chinese sentences per genre will be provided for system performance evaluation.</p>
               </div>
             </div>
 
             <h3 class="card-title">IV. Evaluation</h3>
             <div class="row">
               <div class="col">
-                <p>The performance is evaluated by examining the difference between machine-predicted labels and human-annotated labels. We adopt standard precision, recall, and F1-score, which are the most typical evaluation metrics of NER systems at a character level. If the predicted tag of a character in terms of BIO format was completely identical with the gold standard, that is one of the defined BIO tags, the character in the testing instance was regarded as correctly recognized. Precision is defined as the percentage of named entities found by the NER system that are correct. Recall is the percentage of named entities present in the test set found by the NER system. Different genre will be evaluated independently. The <span class="text-highligh">Macro-averaging F1</span> score among three genres will be used for final ranking in the leaderboard.</p>
+                <p class="content">The performance is evaluated by examining the difference between machine-predicted labels and human-annotated labels. We adopt standard precision, recall, and F1-score, which are the most typical evaluation metrics of NER systems at a character level. If the predicted tag of a character in terms of BIO format was completely identical with the gold standard, that is one of the defined BIO tags, the character in the testing instance was regarded as correctly recognized. Precision is defined as the percentage of named entities found by the NER system that are correct. Recall is the percentage of named entities present in the test set found by the NER system. Different genre will be evaluated independently. The <span class="text-highligh">Macro-averaging F1</span> score among three genres will be used for final ranking in the leaderboard.</p>
               </div>
             </div>
 
@@ -839,7 +839,7 @@
             <h3 class="card-title">VI. Baseline System</h3>
             <div class="row">
               <div class="col">
-                <p>We provide a starter kit on our GitHub Repo. It can be used to create the BiLSTM-CRF system for the NER tasks.<br><a href="https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER " target="_blank">https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER</a></p>
+                <p class="content">We provide a starter kit on our GitHub Repo. It can be used to create the BiLSTM-CRF system for the NER tasks.<br><a href="https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER " target="_blank">https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER</a></p>
               </div>
             </div>
 
@@ -897,10 +897,10 @@
                 <h3 class="card-title">I. Background of the Competition Event</h3>   
                 <div class="row">
                   <div class="col">
-                    <p>
+                    <p class="content">
                       In order to sustainably inherit the Hakka language, accelerate research and development in Hakka speech recognition, and promote the Taiwan Hakka Speech Database established by our organization, we are organizing the "2023 Hakka Speech Recognition Competition" to provide the existing Taiwan Hakka Speech Database as a basis for training speech recognition models for competition participants. Through this series of competitions, we aim to expedite domestic research and development in Hakka speech recognition and promote academic research and industrial development in Hakka speech AI.
                     </p>
-                    <p>
+                    <p class="content">
                       The competition is organized by Hakka Affairs Council and Industry Academia Innovation School, National Yang Ming Chiao Tung University. It is co-organized by The Association for Computational Linguistics and Chinese Language Processing and National Center for High-Performance Computing. Based on Hakka Affairs Council's speech database, we will provide training data for speech recognition models to competition participants, with the goal of injecting technological energy into the practical use of Hakka in daily life, promoting Hakka language and culture, and enhancing the popularization of Hakka usage.
                     </p>
                   </div>
@@ -1019,10 +1019,10 @@
                 <h3 class="card-title">VI. Contact Information for this Competition:</h3>
                 <div class="row">
                   <div class="col">
-                    <p>
-                      Ms. Yang: 03-5712121#54554 / <a href="mailto:m31221123@nycu.edu.tw">m31221123@nycu.edu.tw</a><br>
-                      Ms. Bai: 03-5712121#54555 / <a href="mailto:pehsimju@nycu.edu.tw">pehsimju@nycu.edu.tw</a>
-                    </p>
+                    <ol>
+                      <li style="list-style-type: square;">Ms. Yang: 03-5712121#54554 / <a href="mailto:m31221123@nycu.edu.tw">m31221123@nycu.edu.tw</a></li>
+                      <li style="list-style-type: square;">Ms. Bai: 03-5712121#54555 / <a href="mailto:pehsimju@nycu.edu.tw">pehsimju@nycu.edu.tw</a></li>
+                    </ol>
                   </div>
                 </div>
                 <h3 class="card-title">VII. The organizer reserves the right to cancel, terminate, modify, or suspend this event at any time.</h3>
@@ -1051,10 +1051,10 @@
                 <h3 class="card-title">一、 競賽活動緣起</h3>   
                 <div class="row">
                   <div class="col">
-                    <p>
+                    <p class="content">
                       為永續傳承客家語言，加速客語語音辨識研究及發展，並推廣本會建置之臺灣客語語音資料庫，讓更多團隊投入客語語音開發，特辦理「2023客語語音辨認競賽活動」，規劃以現有臺灣客語語音資料庫之語音資料為基礎，提供予競賽學員進行語音辨識模型之訓練。透過此系列競賽加速國內客語語音辨識研究與產業開發進程，推動客語語音AI的學術研究與產業開發。
                     </p>
-                    <p>
+                    <p class="content">
                       本次客語語音辨認競賽主辦單位為客家委員會與國立陽明交通大學產學創新研究學院，協辦單位為社團法人中華民國計算語言學學會及財團法人國家實驗研究院國家高速網路與計算中心。擬以客委會語音資料庫為基礎，提供予競賽學員進行語音辨識模型之訓練，期許能透過本活動讓客語在生活使用中注入科技能量，推廣客家語言文化並提升客語使用之普及性。
                     </p>
                   </div>
@@ -1173,10 +1173,10 @@
                 <h3 class="card-title">六、 本競賽活動聯絡窗口</h3>
                 <div class="row">
                   <div class="col">
-                    <p>
-                      楊小姐: 03-5712121#54554 / <a href="mailto:m31221123@nycu.edu.tw">m31221123@nycu.edu.tw</a><br>
-                      白小姐: 03-5712121#54555 / <a href="mailto:pehsimju@nycu.edu.tw">pehsimju@nycu.edu.tw</a>
-                    </p>
+                    <ol>
+                      <li style="list-style-type: square;">楊小姐: 03-5712121#54554 / <a href="mailto:m31221123@nycu.edu.tw">m31221123@nycu.edu.tw</a></li>
+                      <li style="list-style-type: square;">白小姐: 03-5712121#54555 / <a href="mailto:pehsimju@nycu.edu.tw">pehsimju@nycu.edu.tw</a></li>
+                    </ol>
                   </div>
                 </div>
                 <h3 class="card-title">七、 主辦單位保留隨時取消、終止、變更或暫停本案之權利</h3>
