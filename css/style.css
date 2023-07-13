@@ -1111,6 +1111,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: bold;
 }
 
+#task .content {
+  text-indent: 2em;
+}
+
 /*--------------------------------------------------------------
 # Special Session Section
 --------------------------------------------------------------*/
@@ -1141,6 +1145,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #special h5 {
   margin-bottom: 5px;
+}
+
+#special .content {
+  text-indent: 2em;
 }
 
 #special .speakers-img {
