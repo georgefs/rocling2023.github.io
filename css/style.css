@@ -797,7 +797,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
-#speakers .speaker-name {
+#speakers .bold-content {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: bold;
