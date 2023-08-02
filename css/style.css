@@ -63,6 +63,9 @@ section {
   visibility: hidden;
 }
 
+.text-justify {
+  text-align: justify;
+}
 /* Prelaoder */
 
 #preloader {
@@ -663,6 +666,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+#intro #news {
+  font-size: 16px;
+  text-align: left;
+  margin: 10px;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -825,6 +834,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   margin-bottom: 10px;
   font-style: italic;
+
 }
 
 #speakers .speaker .details .social {
@@ -1148,7 +1158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #special .content {
-  text-indent: 2em;
+  text-align: justify;
 }
 
 #special .speakers-img {
@@ -1433,7 +1443,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #organization .organizedBy_image {
   height: 100px;
-  overflow: hidden;
+  padding: 10px;
 }
 
 #organization .organizedBy_image img {
@@ -1861,7 +1871,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #header #logo {
   display: inline;
-}
+  }
+
 }
 
 @media (max-width: 991px) {
