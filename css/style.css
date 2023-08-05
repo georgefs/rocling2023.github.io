@@ -1442,7 +1442,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #organization .organizedBy_image {
-  height: 100px;
+  height: 150px;
   padding: 10px;
 }
 
@@ -1559,6 +1559,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list .faq-content li {
+  border: 0px;
+}
+
+#faq #faq-list .eng-content {
+  font-size: 14px;
+  display: block;
+}
+
+#faq #faq-list .eng-content a {
+  font-size: 14px;
+  display: inline;
+  padding: 0px;
+  color: #8a73bf;
+}
+
+#faq #faq-list .eng-content li {
+  font-size: 14px;
   border: 0px;
 }
 
