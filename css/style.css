@@ -670,7 +670,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
   text-align: left;
   margin: 10px;
-  width: 50%
 }
 
 /*--------------------------------------------------------------
@@ -1875,8 +1874,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 4px;
   }
 
-  #intro #news {
-  width: 70%
+  
 }
 
 }
@@ -1938,9 +1936,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
-  #intro #news {
-  width: 95%
-}
+
 }
 
 @media (max-width: 574px) {
