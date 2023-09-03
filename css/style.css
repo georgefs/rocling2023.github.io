@@ -328,6 +328,18 @@ display: flex;
   margin-top: 2px;
   line-height: 1;
   font-size: 13px;
+  animation: highlight-button 3s ease-in-out infinite alternate;
+}
+
+@keyframes highlight-button {
+  0%,
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+  }
+  50% {
+    text-shadow: 0 0 40px #fff, 0 0 120px #fff, 0 0 30px #fff;
+    color: #a796cf;
+  }
 }
 
 .nav-menu li.highlight-button a:hover {
@@ -631,6 +643,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #755BB4;
+  animation: highlight-button 1.5s ease-in-out infinite alternate;
 }
 
 #intro .about-btn:hover {
