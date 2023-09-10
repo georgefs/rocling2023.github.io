@@ -673,6 +673,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 50%
 }
 
+#intro #news a {
+  color: #8a73bf;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -760,7 +764,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Important Dates Section
+# Call For Paper Section
 --------------------------------------------------------------*/
 
 #call h3 {
@@ -785,6 +789,69 @@ body.mobile-nav-active #mobile-nav-toggle {
 #call ul li {
   font-size: 16px;
 }
+
+/*--------------------------------------------------------------
+# Accepted Papers Section
+--------------------------------------------------------------*/
+
+#accepted-papers h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+#accepted-papers h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+#accepted-papers p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#accepted-papers ul li {
+  font-size: 16px;
+}
+
+#accepted-papers ul li .title {
+  font-weight: bold;
+}
+
+#accepted-papers ul li .authors {
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Camera-Ready Paper Section
+--------------------------------------------------------------*/
+
+#camera-ready h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+#camera-ready h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+#camera-ready p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#camera-ready ul li {
+  font-size: 16px;
+}
+
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
