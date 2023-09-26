@@ -28,7 +28,7 @@ jQuery(document).ready(function( $ ) {
 
   // Real view height for mobile devices
   if (window.matchMedia("(max-width: 767px)").matches) {
-    $('#intro').css({ height: $(window).height() });
+    //$('#intro').css({ height: $(window).height() });
   }
 
   // Initiate the wowjs animation library
@@ -156,7 +156,7 @@ showTime();
 
 // Date
 function updateDate() {
-  let today = new Date();
+  let today = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Taipei' }));
 
   // return number
   let dayName = today.getDay(),
