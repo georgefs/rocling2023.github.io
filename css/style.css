@@ -484,7 +484,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: url(../img/intro-bg-unsplash.jpg) top center;
   background-size: cover;
   overflow: hidden;
@@ -505,7 +505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 0px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,7 +867,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers .speaker {
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 #speakers h4 {
@@ -895,12 +895,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 #speakers .speaker .details p {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-style: italic;
 
 }
@@ -969,7 +969,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: auto;
   display: block;
   border-bottom: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 #schedule .nav-tabs li {
@@ -1003,14 +1003,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
+  border-bottom: 1px solid #b6a8d7;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
 
 #schedule .schedule-item:hover {
-  background-color: #fff;
+  background-color: #f0eef7;
 }
 
 #schedule .schedule-item time {
@@ -1019,15 +1019,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   overflow: hidden;
   border-radius: 50%;
   float: left;
   margin: 0 10px 10px 0;
 }
 
-#schedule .schedule-item .speaker img {
+#schedule .schedule-item .sub-speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0
+}
+
+
+#schedule .schedule-item .speaker img,
+#schedule .schedule-item .sub-speaker img  {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1035,23 +1046,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
-#schedule .schedule-item h4 {
-  font-size: 18px;
+#schedule .schedule-item h4,
+#schedule .detailed-programs h4 {
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#schedule .schedule-item h4 span {
+#schedule .schedule-item h4 span,
+#schedule .detailed-programs h4 span {
   font-style: italic;
   color: #19328e;
   font-weight: normal;
   font-size: 16px;
+  margin-left: 20px;
 }
 
 #schedule .schedule-item p {
   font-style: italic;
   color: #152b79;
   margin-bottom: 0;
+}
+#schedule .schedule-item hr {
+  border-bottom: 1px solid #b6a8d7;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .chair {
+  display: none;
+}
+
+#schedule .papers {
+  display: ;
+}
+
+#schedule .detailed-programs ul li {
+  margin-bottom: 15px;
+}
+
+#schedule .detailed-programs ul li .title {
+  font-weight: bold;
+}
+
+#schedule .detailed-programs ul li .author {
+  font-style: italic;
+  padding-left: 20px;
+}
+
+#schedule .detailed-programs .modal-dialog {
+  max-width: 1140px;
 }
 
 /*--------------------------------------------------------------
@@ -1895,6 +1938,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe input {
     min-width: 400px;
   }
+  #schedule .modal-dialog {
+    max-width: 1140px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1961,6 +2007,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: inline;
   }
 
+  #intro .intro-container {
+    top: 0px;
+    height: 120vh
+  }
+  #intro h1 {
+    font-size: 32px;
+  }
+
+  #schedule .modal-dialog {
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -1970,13 +2028,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 15px 0;
     transition: all 0.5s;
   }
-
   #intro .intro-container {
-    top: 150px;
+    height: 140vh
   }
+  
 
   #intro h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
 
   #intro p {
@@ -1987,6 +2045,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: -100px;
   }
 
+  #speakers .speaker .details h3 {
+    font-size: 18px;
+  }
+
+  #speakers .speaker .details p {
+    font-size: 16px;
+  }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -2001,18 +2068,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   #faq #faq-list i {
     top: 13px;
   }
-
+  #intro .intro-container {
+    height: 150vh
+  }
 }
 
 @media (max-width: 767px) {
   #intro #news {
   width: 95%
-}
+  }
+  #intro .intro-container {
+    height: 160vh
+  }
 }
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  #intro .intro-container {
+    height: 170vh
   }
 }
 
