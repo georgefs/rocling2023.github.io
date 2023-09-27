@@ -489,6 +489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   overflow: hidden;
   position: relative;
+  padding-top: 50px;
 }
 
 #intro:before {
@@ -1234,6 +1235,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #task .content {
   text-indent: 2em;
+}
+
+#task .border-top-bold {
+  border-top: 3px black solid;
+}
+
+#task .border-bottom-bold {
+  border-bottom: 3px black solid;
+}
+
+#task .border-bottom-double {
+  border-bottom: 5px black double;
+}
+
+#task .reference-list {
+  padding: 0;
+}
+
+#task .reference-item {
+  list-style-type: none;
+}
+
+#task .reference-item::before {
+  content: "[" attr(reference-number) "]";
+  margin-right: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -2009,7 +2035,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #intro .intro-container {
     top: 0px;
-    height: 120vh
+    //height: 120vh
   }
   #intro h1 {
     font-size: 32px;
@@ -2028,8 +2054,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 15px 0;
     transition: all 0.5s;
   }
-  #intro .intro-container {
-    height: 140vh
+  #intro  {
+    //height: 140vh
   }
   
 
@@ -2053,6 +2079,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 16px;
   }
 
+  #schedule .detailed-programs ul li {
+    margin-bottom: 5px;
+  }
   
 }
 
@@ -2068,17 +2097,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #faq #faq-list i {
     top: 13px;
   }
-  #intro .intro-container {
-    height: 150vh
-  }
+  
 }
 
 @media (max-width: 767px) {
   #intro #news {
   width: 95%
   }
-  #intro .intro-container {
-    height: 160vh
+  #intro  {
+    //height: 160vh
   }
 }
 
@@ -2086,8 +2113,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   #venue .venue-info h3 {
     font-size: 24px;
   }
-  #intro .intro-container {
-    height: 170vh
+  #intro {
+    //height: 170vh
+  }
+  #intro  {
+    height: 180vh
   }
 }
 
