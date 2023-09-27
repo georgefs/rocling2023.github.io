@@ -1467,6 +1467,121 @@
                 <p class="content">We provide a starter kit on our GitHub Repo. It can be used to create the BiLSTM-CRF system for the NER tasks.<br><a href="https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER " target="_blank">https://github.com/NCUEE-NLPLab/AITutorial-2022-ChineseNER</a></p>
               </div>
             </div>
+            <h3 class="card-title">V. Results</h3>
+            <div class="row">
+              <div class="col">
+                <table class="table table-responsive-lg">
+                  <tbody class="entity-type">
+                    <tr class="border-top-bold">
+                      <td rowspan=2><b>Team</b></td>
+                      <td rowspan=2><b>Run#</b></td>
+                      <td colspan=4><b>F1-score (%)</b></td>
+                      <td rowspan=2><b>Rank</b></td>
+                    </tr>
+                    <tr class="border-bottom-bold">
+                      <td><b>Formal Texts</b></td>
+                      <td><b>Social Media</b></td>
+                      <td><b>Wikipedia Articles</b></td>
+                      <td><b>Macro-averaging</b></td>
+                    </tr>
+                    <tr>
+                      <td>CrowNER [1]</td>
+                      <td>Run 2</td>
+                      <td><b>65.49</b></td>
+                      <td>69.54</td>
+                      <td><b>73.63</b></td>
+                      <td><b>69.55</b></td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>YNU-HPCC [2]</td>
+                      <td>Run 2</td>
+                      <td>61.96</td>
+                      <td>71.11</td>
+                      <td>72.13</td>
+                      <td>68.40</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>ISLab [3]</td>
+                      <td>Run 1</td>
+                      <td>62.52</td>
+                      <td><b>71.42</b></td>
+                      <td>71.19</td>
+                      <td>68.38</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SCU-MESCLab [4]</td>
+                      <td>Run 1</td>
+                      <td>62.51</td>
+                      <td>71.33</td>
+                      <td>70.57</td>
+                      <td>68.14</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>YNU-ISE-ZXW [5]</td>
+                      <td>Run 3</td>
+                      <td>62.79</td>
+                      <td>70.22</td>
+                      <td>70.37</td>
+                      <td>67.79</td>
+                      <td>5</td>
+                    </tr>
+                    <tr class="border-bottom-double">
+                      <td>LingX [6]</td>
+                      <td>Run 2</td>
+                      <td>51.23</td>
+                      <td>59.28</td>
+                      <td>60.54</td>
+                      <td>57.02</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td rowspan=2>Baseline [7]<br>(BiLSTM-CRF)</td>
+                      <td>Word2vec</td>
+                      <td>60.99</td>
+                      <td>67.16</td>
+                      <td>67.91</td>
+                      <td>65.35</td>
+                      <td>-</td>
+                    </tr>
+                    <tr class="border-bottom-bold">
+                      <td>BERT</td>
+                      <td>61.08</td>
+                      <td>70.77</td>
+                      <td>72.54</td>
+                      <td>68.13</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="reference-list">
+                  <li class="reference-item" reference-number="1">
+                    Yin-Chieh Wang, Wen-Hong Wu, Feng-Yu Kuo, Han-Chun Wu, Te-Yu Chi, Te-Lun Yang, Sheh Chen, and Jyh-Shing Roger Jang. 2023. CrowNER at ROCLING 2023 MultiNER-Health Task: enhancing NER task with GPT paraphrase augmentation on sparsely labeled data.
+                  </li>
+                  <li class="reference-item"reference-number="2">
+                    Chonglin Pang, You Zhang, and Xiaobing Zhou. YUN-HPCC at ROCLING 2023 MultiNER-Health Task: a transformer-based approach for Chinese healthcare NER.
+                  </li>
+                  <li class="reference-item"reference-number="3">
+                    Jun-Jie Wu, Tao-Hsing Chang, and Fu-Yuan Hsu. 2023. ISLab at ROCLING 2023. MultiNER-Health Task: a three-stage NER model combining textual content and label semantics.
+                  </li>
+                  <li class="reference-item"reference-number="4">
+                    Tzu-En Su, Ruei-Cyuan Su, Ming-Hsiang Su, and Tsung-Hsien Yang. 2023. SCU-MESCLab at ROCLING 2023 MultiNER-Health Task: named entity recognition using multiple classifier model.
+                  </li>
+                  <li class="reference-item"reference-number="5">
+                    Xingwei Zhang, Jin Wang, and Xuejie Zhang. 2023. YUN-ISE-ZXW at ROCLING 2023 MultiNER-Health Task: a transformer-based model with LoRA for Chinese healthcare named entity recognition.
+                  </li>
+                  <li class="reference-item"reference-number="6">
+                    Xuelin Wang and Qihao Yang. 2023. LingX at ROCLING 2023 MultiNER-Health Task: intelligent capture of Chinese medical named entities by LLMs.
+                  </li>
+                  <li class="reference-item"reference-number="7">
+                    Lung-Hao Lee, Chien-Huan Lu, and Tzu-Mi Lin. 2022. NCUEE-NLP at SemEval-2022. Task 11: Chinese named entity recognition using the BERT-BiLSTM-CRF model. In Proceedings of the 16th International Workshop on Semantic Evaluation. Association for Computational Linguistics, pages 1597-1602. 
+                  </li>
+                </ul>
+              </div>
+            </div>
             <h3 class="card-title">References</h3>
             <div class="row">
               <div class="col">
