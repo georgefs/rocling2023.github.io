@@ -26,7 +26,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  
+
   <!-- Google Search Console -->
   <meta name="google-site-verification" content="-fD59RiHc4OQb37XpVtmZkcUeguaxVbKsDHtu6wsbQo" />
   
@@ -53,6 +53,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
+          <!-- <li><a href="#photo">Photo</a></li> -->
           <li><a href="#call">Submit</a></li>
           <li><a href="#schedule">Program</a></li>
           <li><a href="#speakers">Keynote Speaker</a></li>
@@ -205,6 +206,30 @@
             </div>
           </div>
           <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    Carousel
+    ============================-->
+    <section id="photo" class="wow fadeInUp">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Photo</h2>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carouselInner">
+            <div class="carousel-item active">
+              <img src="img/photo/2T1A0583.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev btn btn-outline-dark" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next btn btn-outline-dark" type="button" data-target="#carouselExampleControls" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
     </section>
@@ -2972,6 +2997,65 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script>
+  const imageUrls = ['2T1A0930.jpg', '2T1A1200.jpg', '2T1A1301.jpg', 
+                     '2T1A1556.jpg', '2T1A2105.jpg', 'DSC02088.jpg', 'DSC02566.jpg', 
+                     'DSC02693.jpg', '2T1A0591.jpg', '2T1A0952.jpg', '2T1A1217.jpg',
+                     '2T1A1302.jpg', '2T1A1567.jpg', '2T1A2112.jpg', 'DSC02196.jpg', 
+                     'DSC02575.jpg', 'DSC02699.jpg', '2T1A0596.jpg', '2T1A0955.jpg', 
+                     '2T1A1225.jpg', '2T1A1306.jpg', '2T1A1642.jpg', '2T1A2123.jpg', 
+                     'DSC02216.jpg', 'DSC02583.jpg', 'DSC02733.jpg', '2T1A0601.jpg', 
+                     '2T1A0957.jpg', '2T1A1227.jpg', '2T1A1320.jpg', '2T1A1649.jpg', 
+                     '2T1A2128.jpg', 'DSC02262.jpg', 'DSC02589.jpg', 'DSC02736.jpg', 
+                     '2T1A0604.jpg', '2T1A0981.jpg', '2T1A1235.jpg', '2T1A1325.jpg', 
+                     '2T1A1659.jpg', '2T1A2132.jpg', 'DSC02312.jpg', 'DSC02595.jpg', 
+                     'DSC02775.jpg', '2T1A0605.jpg', '2T1A1013.jpg', '2T1A1242.jpg', 
+                     '2T1A1327.jpg', '2T1A1733.jpg', '2T1A2139.jpg', 'DSC02392.jpg', 
+                     'DSC02599.jpg', 'DSC02804.jpg', '2T1A0651.jpg', '2T1A1016.jpg', 
+                     '2T1A1247.jpg', '2T1A1336.jpg', '2T1A1743.jpg', '2T1A2147.jpg', 
+                     'DSC02400.jpg', 'DSC02608.jpg', 'DSC02834.jpg', '2T1A0655.jpg', 
+                     '2T1A1021.jpg', '2T1A1250.jpg', '2T1A1342.jpg', '2T1A1774.jpg', 
+                     '2T1A2155.jpg', 'DSC02415.jpg', 'DSC02612.jpg', 'DSC02890.jpg', 
+                     '2T1A0659.jpg', '2T1A1034.jpg', '2T1A1261.jpg', '2T1A1357.jpg', 
+                     '2T1A1842.jpg', '2T1A2170.jpg', 'DSC02461.jpg', 'DSC02615.jpg', 
+                     'DSC02901.jpg', '2T1A0721.jpg', '2T1A1067.jpg', '2T1A1263.jpg', 
+                     '2T1A1374.jpg', '2T1A1872.jpg', '2T1A2174.jpg', 'DSC02472.jpg', 
+                     'DSC02620.jpg', 'DSC02904.jpg', '2T1A0726.jpg', '2T1A1075.jpg', 
+                     '2T1A1268.jpg', '2T1A1382.jpg', '2T1A1893.jpg', '2T1A2186.jpg', 
+                     'DSC02487.jpg', 'DSC02624.jpg', 'DSC02919.jpg', '2T1A0757.jpg', 
+                     '2T1A1093.jpg', '2T1A1278.jpg', '2T1A1390.jpg', '2T1A1896.jpg', 
+                     '2T1A2210.jpg', 'DSC02496.jpg', 'DSC02628.jpg', 'DSC02933.jpg', 
+                     '2T1A0802.jpg', '2T1A1106.jpg', '2T1A1283.jpg', '2T1A1392.jpg', 
+                     '2T1A1943.jpg', '2T1A2221.jpg', 'DSC02523.jpg', 'DSC02636.jpg', 
+                     'DSC02941.jpg', '2T1A0817.jpg', '2T1A1126.jpg', '2T1A1287.jpg', 
+                     '2T1A1410.jpg', '2T1A2056.jpg', '2T1A2227.jpg', 'DSC02547.jpg', 
+                     'DSC02641.jpg', 'DSC02955.jpg', '2T1A0863.jpg', '2T1A1133.jpg', 
+                     '2T1A1288.jpg', '2T1A1442.jpg', '2T1A2061.jpg', '2T1A3675.jpg', 
+                     'DSC02550.jpg', 'DSC02647.jpg', 'DSC02965.jpg', '2T1A0866.jpg', 
+                     '2T1A1140.jpg', '2T1A1296.jpg', '2T1A1453.jpg', '2T1A2064.jpg', 
+                     '2T1A3701.jpg', 'DSC02552.jpg', 'DSC02651.jpg', 'DSC02982.jpg', 
+                     '2T1A0915.jpg', '2T1A1148.jpg', '2T1A1298.jpg', '2T1A1489.jpg', 
+                     '2T1A2075.jpg', '2T1A3707.jpg', 'DSC02557.jpg', 'DSC02661.jpg', 
+                     'DSC02986.jpg', '2T1A0918.jpg', '2T1A1155.jpg', '2T1A1300.jpg', 
+                     '2T1A1534.jpg', '2T1A2079.jpg', '2T1A3710.jpg', 'DSC02561.jpg', 
+                     'DSC02665.jpg', 'DSC03646.jpg'];
+
+  var carouselInner = document.getElementById("carouselInner");
+
+  for (var i = 0; i < imageUrls.length; i++) {
+    var newCarouselItem = document.createElement("div");
+    newCarouselItem.classList.add("carousel-item");
+
+    var newImage = document.createElement("img");
+    newImage.src = 'img/photo/'+imageUrls[i];
+    newImage.classList.add("d-block", "w-100");
+    
+    newCarouselItem.appendChild(newImage);
+    carouselInner.appendChild(newCarouselItem);
+  }
+  </script>
+
 </body>
 
 </html>
