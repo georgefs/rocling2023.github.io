@@ -764,6 +764,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
+
 /*--------------------------------------------------------------
 # Call For Paper Section
 --------------------------------------------------------------*/
@@ -958,6 +959,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers-details .details p {
   color: #112363;
   margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# photo
+--------------------------------------------------------------*/
+#photo .btn {
+  border: none;
+  box-shadow: none;
+}
+
+#photo .btn:active .btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /*--------------------------------------------------------------
